@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="Images/logo2.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+       body{
+        background-color: rgba(0, 0, 0, 0.671);
+        background-image: url(Images/image_de_fond.jpg) ;
+        background-repeat:no-repeat;
+        background-size: cover;
+        
+       }
+        .container1 {
+            display:flex;
+            margin-left: 30% !important; 
+            margin-top: 3% !important;
+            flex-direction: column;
+           
+            text-align: center;
+            width: 400px;
+            height: 500px !important;
+            background: #728d2d;
+            background: linear-gradient(0deg, rgb(11, 10, 10) 0%, rgba(2, 7, 7, 0.322) 100%);
+            border-radius: 40px;
+            padding: 25px 35px;
+            border: 5px solid rgba(255, 255, 255, 0.909);
+            box-shadow: rgba(180, 150, 13, 0.878) 0px 30px 30px -20px;
+            margin-bottom: 3%;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  color:  rgba(255, 255, 255, 0.808);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.form {
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+.form .input {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 17px 10px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #bea70ea7 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.form .input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+  outline: none;
+  border-inline: 2px solid #9a7808;
+}
+
+.form .forgot-password {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.form .forgot-password a {
+  font-size: 11px;
+  color: #e7e6eb;
+  text-decoration: none;
+}
+
+.form .login-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg,  #DAA520 0%,  #DAA520 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(159, 126, 8, 0.878) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .login-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(188, 137, 10, 0.878) 0px 23px 10px -20px;
+}
+
+.form .login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(208, 179, 11, 0.878) 0px 15px 10px -10px;
+}
+
+.social-account-container {
+  margin-top: 25px;
+}
+
+.social-account-container .title {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(170, 170, 170);
+}
+
+.social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-account-container .social-accounts .social-button {
+  background: linear-gradient(45deg, rgb(3, 3, 3) 0%, rgb(112, 112, 112) 100%);
+  border: 5px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(197, 166, 11, 0.878) 0px 12px 10px -8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-account-container .social-accounts .social-button .svg {
+  fill: white;
+  margin: auto;
+}
+
+.social-account-container .social-accounts .social-button:hover {
+  transform: scale(1.2);
+}
+
+.social-account-container .social-accounts .social-button:active {
+  transform: scale(0.9);
+}
+
+.agreement {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 9px;
+}
+</style>
+</head>
+<body >
+  <section class="tete1">
+    <input id="menu-toggle" type="checkbox" />
+<label class='menu-button-container' for="menu-toggle">
+<div class='menu-button'></div>
+</label>
+  <ul class="tete">
+  
+          <li class="dropdown" style="color: rgb(247, 241, 241); font-style: robotic; font-size: 20px; margin-top: 0%;"><img src="Images/logo.2.png" style="width: 120%; height: 20%; margin-right: 0%; "> </img></li>
+          
+          <li class="dropdown"><a href="index.html" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+              <path stroke="currentColor" d="M9 22V12H15V22M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"></path>
+            </svg>&nbsp; Home</a></li>
+
+          
+          <li class="dropdown">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+              <path stroke-linecap="round" stroke-linecap="round" stroke-width="1" stroke="currentColor" d="M15 15l5 5-5 5M7 14a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"></path>
+          </svg>&nbsp;About</a></li>
+
+          
+          <li class="dropdown"><a href="products.html"> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" d="M3 3h2l3.15 12.61a2 2 0 0 0 1.85 1.39H19a2 2 0 0 0 2-2 2 2 0 0 0-2-2H8M5 7h14"></path>
+          </svg> &nbsp;Products</a></li>
+
+          
+          <li class="dropdown">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"></path>
+            </svg> &nbsp; Contact</li>
+
+          
+          <li class="dropdown"><a href="login_page.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z"></path>
+            </svg>&nbsp; Account</a></li>
+
+          <li class="search-box" style="flex: 2;">
+            <div class="searchBox">
+
+              <input class="searchInput" type="text" name="" placeholder="Search something">
+              <button class="searchButton" href="#">
+                     
+     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+    <g clip-path="url(#clip0_2_17)">
+      <g filter="url(#filter0_d_2_17)">
+        <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+      </g>
+    </g>
+    <defs>
+      <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+      </filter>
+      <clipPath id="clip0_2_17">
+        <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+      </clipPath>
+    </defs>
+  </svg>
+                       
+  
+              </button>
+          </div>
+        </li>
+      </ul>
+  
+</section>
+<div class="container1">
+    <div class="heading">Sign In</div>
+    <form action="" class="form">
+      <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+      <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+      <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+      <input class="login-button" type="submit" value="Sign In" type="margin">
+      
+    </form>
+    <div class="social-account-container">
+        <span class="title">Or Sign in with</span>
+        <div class="social-accounts">
+          <button class="social-button google">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512">
+              <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+            </svg></button>
+          <button class="social-button apple">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+              <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+            </svg>
+          </button>
+          <button class="social-button twitter">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <span class="agreement"><a href="#">Don't have an account? Click here to create one</a></span>
+  </div>
+  <footer>
+    <div><p>&copy; 2024 Nk_watch. Tous droits réservés.</p></div>
+    
+    </footer>  
+
+</body>
+</html>
