@@ -96,7 +96,7 @@ a:hover {
   height: 50px;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 0px;
   background: #2f3640;
   border-radius: 50px;
   position: relative;
@@ -545,12 +545,12 @@ div.Contact1 svg {
 
 div.featured_products{
   display:grid;
-  grid-gap: 40px;
+  grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 30px;
-  margin-bottom: 5%;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-bottom: 0%;
+  margin-right: 0%;
+  margin-left: 3%;
   margin-top: 0%;
 
 }
@@ -702,16 +702,17 @@ p{
 .wrapper {
   display:flex;
   flex-direction: column;
-  width: 350px;
-  height: 470px;
+  width: 270px;
+  height: 400px;
   border: 1px solid #fcfbfb;
   background-color: #ffffff;
   border-radius: 5px;
   gap: 5px;
+  margin-bottom: 40%;
 }
 
 .wrapper img {
-  width: 150x;
+  width: 100x;
   height: 350px;
 
 }
