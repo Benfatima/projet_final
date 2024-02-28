@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - Nk_watch</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      margin: 50;
+      padding: 0;
+      background-image: url(Images/image_de_fond.jpg) ;
+      background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    }
+    .tete1{
+        align-self: flex-start;
+    }
+
+    .form {
+  background-color: #adb41bab;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+  border: 5px solid rgba(255, 255, 255, 0.909);
+  width: 600px;
+  margin-bottom: 5%;
+}
+
+.title {
+  color: white;
+  font-weight: 900;
+  font-size: 55px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input-container {
+    display: flex;
+  height: 50px;
+  position: relative;
+  width: 100%;
+  justify-content: center; 
+  align-items: center;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: white;
+  border-radius: 15px;
+  border: 0;
+  display: center;
+ 
+  color: #070505;
+  font-size: 18px;
+  height: 100%;
+  padding: 4px 20px 0;
+  width: 31vw;
+  
+ 
+  
+}
+
+
+
+.cut-short {
+  width: 50px;
+}
+
+.iLabel {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 25px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+  margin-left: 20%;
+}
+
+.input:focus ~ .cut {
+  transform: translateY(8px);
+}
+
+.input:focus ~ .iLabel {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:focus) ~ .iLabel {
+  color: #808097;
+}
+
+.input:focus ~ .iLabel {
+  color: black;
+  font-size: 20px;
+}
+
+.submit {
+  background-color: rgb(146, 9, 38);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+@media only screen and (max-width:  900px) and (min-width: 5px) {
+  
+    div.form {
+        display: flex;
+        flex-direction: column;
+
+        height: auto !important;
+        
+  width: auto !important;
+  background-color: rgba(255, 234, 0, 0.342) !important;
+  
+  border: 10px !important;
+  margin-left: 0% !important;
+  margin-top: 0% !important;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 5%;
+    }  
+    .input-container {
+       
+  height: 5vw !important;
+  
+  margin-top: 0px;
+  margin-bottom: 10% !important;
+  margin-top: 10% !important;
+    }
+    .input{
+   height: 40vh !important;
+   font-size: 20px;
+   margin-left: 0%;
+   width:50vw !important;
+   
+    }
+
+    .iLabel{
+        font-size: 2.5vw !important;
+        text-align: center !important;
+        color: black !important;
+        white-space: nowrap;
+        line-height: 0px !important;
+        top: 0px !important;
+    }
+    .title{
+        font-size: 2.5em !important;
+    }
+    .subtitle {
+        font-size: 1.5em !important;
+        margin-bottom: 5% !important;
+    }
+
+}
+  </style>
+</head>
+<body>
+    <div class="tete1">
+        <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+      <ul class="tete">
+      
+              <li class="dropdown" style="color: rgb(247, 241, 241); font-style: robotic; font-size: 20px; margin-top: 0%;"><img src="Images/logo.2.png" style="width: 120%; height: 20%; margin-right: 0%; "> </img></li>
+              
+              <li class="dropdown"><a href="index.html" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+                  <path stroke="currentColor" d="M9 22V12H15V22M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"></path>
+                </svg>&nbsp; Home</a></li>
+    
+              
+              <li class="dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+                  <path stroke-linecap="round" stroke-linecap="round" stroke-width="1" stroke="currentColor" d="M15 15l5 5-5 5M7 14a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"></path>
+              </svg>&nbsp;About</a></li>
+    
+              
+              <li class="dropdown"><a href="products.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" d="M3 3h2l3.15 12.61a2 2 0 0 0 1.85 1.39H19a2 2 0 0 0 2-2 2 2 0 0 0-2-2H8M5 7h14"></path>
+              </svg> &nbsp;Products</a></li>
+    
+              
+              <li class="dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"></path>
+                </svg> &nbsp; Contact</li>
+    
+              
+              <li class="dropdown"><a href="login_page.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z"></path>
+                </svg>&nbsp; Account</a></li>
+    
+              <li class="search-box" style="flex: 2;">
+                <div class="searchBox">
+    
+                  <input class="searchInput" type="text" name="" placeholder="Search something">
+                  <button class="searchButton" href="#">
+                         
+         <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+        <g clip-path="url(#clip0_2_17)">
+          <g filter="url(#filter0_d_2_17)">
+            <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="4"></feOffset>
+            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+          </filter>
+          <clipPath id="clip0_2_17">
+            <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+                           
+      
+                  </button>
+              </div>
+            </li>
+          </ul>
+      
+        </div>
+<div>
+    <p style="text-align: center; margin-top: 2%; font-size: 35px;margin-left: 5%;margin-right: 5%; color: white;"> <b>  Inscrivez-vous dès maintenant pour accéder à des collections exclusives de montres de luxe. Rejoignez-nous aujourd'hui et vivez le luxe à chaque instant!</p></b>
+</div>
+<div>
+<div class="form">
+        <div class="title">Inscription</div>
+        <div class="subtitle">Allons-y! Créant votre compte! </div>
+  
+        <div class="input-container ic1">
+          <input placeholder="" type="text" class="input" id="firstname">
+          
+          <label class="iLabel" for="firstname">Nom</label>
+        </div>
+  
+        <div class="input-container ic2">
+          <input placeholder="" type="text" class="input" id="lastname">
+          
+          <label class="iLabel" for="lastname">Prenom</label>
+        </div>
+        <div class="input-container ic2">
+          <input placeholder="" type="text" class="input" id="email">
+          
+          <label class="iLabel" for="email">Email</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input placeholder="" type="password" class="input" id="Mot de passe">
+            
+            <label class="iLabel" for="Mot de passe">Mot de passe</label>
+          </div>
+          <div class="input-container ic2">
+            <input placeholder="" type="text" class="input" id="Comfirmez votre mot de passe">
+            
+            <label class="iLabel" for="Confirmation mot de passe">Confirmez votre mot de passe</label>
+          </div>
+       
+        <button class="submit" type="text" onclick="validateForm()">submit</button>
+      </div>
+    </div>
+    <script>
+        // Fonction pour récupérer les données du stockage local et remplir le formulaire
+        function populateForm() {
+            var firstname = localStorage.getItem('firstname');
+            var lastname = localStorage.getItem('lastname');
+            var email = localStorage.getItem('email');
+            var password = localStorage.getItem('password');
+            var confirmPassword = localStorage.getItem('confirmPassword');
+    
+            document.getElementById('firstname').value = firstname || '';
+            document.getElementById('lastname').value = lastname || '';
+            document.getElementById('email').value = email || '';
+            document.getElementById('Mot de passe').value = password || '';
+            document.getElementById('Comfirmez votre mot de passe').value = confirmPassword || '';
+        }
+    
+        // Fonction pour valider le formulaire et enregistrer les données dans le stockage local
+        function validateForm() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("Mot de passe").value;
+            var confirmPassword = document.getElementById("Comfirmez votre mot de passe").value;
+    
+            if (firstname === "" || lastname === "" || email === "" || password === "" || confirmPassword === "") {
+                alert("Veuillez remplir tous les champs.");
+                return;
+            }
+    
+            if (password !== confirmPassword) {
+                alert("Les mots de passe ne correspondent pas.");
+                return;
+            }
+    
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Veuillez entrer une adresse e-mail valide.");
+                return;
+            }
+    
+            // Enregistrez les valeurs des champs dans le stockage local
+            localStorage.setItem('firstname', firstname);
+            localStorage.setItem('lastname', lastname);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+            localStorage.setItem('confirmPassword', confirmPassword);
+    
+            // Ajoutez ici le code pour envoyer les données au serveur si nécessaire
+            alert("Formulaire soumis avec succès !");
+        }
+    
+        // Au chargement de la page, remplissez le formulaire avec les données du stockage local
+        window.onload = function () {
+            populateForm();
+        };
+    </script>
+    
+    
+</body>
+
+</html>
