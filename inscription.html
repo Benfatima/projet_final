@@ -309,19 +309,7 @@
     </div>
     <script>
         // Fonction pour récupérer les données du stockage local et remplir le formulaire
-        function populateForm() {
-            var firstname = localStorage.getItem('firstname');
-            var lastname = localStorage.getItem('lastname');
-            var email = localStorage.getItem('email');
-            var password = localStorage.getItem('password');
-            var confirmPassword = localStorage.getItem('confirmPassword');
-    
-            document.getElementById('firstname').value = firstname || '';
-            document.getElementById('lastname').value = lastname || '';
-            document.getElementById('email').value = email || '';
-            document.getElementById('Mot de passe').value = password || '';
-            document.getElementById('Comfirmez votre mot de passe').value = confirmPassword || '';
-        }
+       
     
         // Fonction pour valider le formulaire et enregistrer les données dans le stockage local
         function validateForm() {
@@ -358,10 +346,7 @@
             alert("Formulaire soumis avec succès !");
         }
     
-        // Au chargement de la page, remplissez le formulaire avec les données du stockage local
-        window.onload = function () {
-            populateForm();
-        };
+       
     </script>
     
     
